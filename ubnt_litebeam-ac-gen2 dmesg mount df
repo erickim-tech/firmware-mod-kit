@@ -1,0 +1,433 @@
+# dmesg 
+[    0.000000] Linux version 5.15.137 (builder@buildhost) (mips-openwrt-linux-musl-gcc (OpenWrt GCC 12.3.0 r23630-842932a63d) 12.3.0, GNU ld (GNU Binutils) 2.40.0) #0 Tue Nov 14 13:38:11 2023
+[    0.000000] printk: bootconsole [early0] enabled
+[    0.000000] CPU0 revision is: 0001974c (MIPS 74Kc)
+[    0.000000] MIPS: machine is Ubiquiti LiteBeam AC Gen2
+[    0.000000] SoC: Atheros AR9342 rev 2
+[    0.000000] Initrd not found or empty - disabling initrd
+[    0.000000] Primary instruction cache 64kB, VIPT, 4-way, linesize 32 bytes.
+[    0.000000] Primary data cache 32kB, 4-way, VIPT, cache aliases, linesize 32 bytes
+[    0.000000] Zone ranges:
+[    0.000000]   Normal   [mem 0x0000000000000000-0x0000000003ffffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000000000000-0x0000000003ffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000000000000-0x0000000003ffffff]
+[    0.000000] pcpu-alloc: s0 r0 d32768 u32768 alloc=1*32768
+[    0.000000] pcpu-alloc: [0] 0 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 16240
+[    0.000000] Kernel command line: console=ttyS0,115200 rootfstype=squashfs,jffs2
+[    0.000000] Dentry cache hash table entries: 8192 (order: 3, 32768 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 4096 (order: 2, 16384 bytes, linear)
+[    0.000000] Writing ErrCtl register=00000000
+[    0.000000] Readback ErrCtl register=00000000
+[    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.000000] Memory: 55912K/65536K available (6079K kernel code, 597K rwdata, 780K rodata, 1240K init, 217K bss, 9624K reserved, 0K cma-reserved)
+[    0.000000] SLUB: HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] NR_IRQS: 51
+[    0.000000] CPU clock: 535.000 MHz
+[    0.000000] clocksource: MIPS: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7144898866 ns
+[    0.000002] sched_clock: 32 bits at 267MHz, resolution 3ns, wraps every 8027976190ns
+[    0.008435] Calibrating delay loop... 266.64 BogoMIPS (lpj=1333248)
+[    0.095036] pid_max: default: 32768 minimum: 301
+[    0.101153] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[    0.108987] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[    0.125884] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.136444] futex hash table entries: 256 (order: -1, 3072 bytes, linear)
+[    0.143988] pinctrl core: initialized pinctrl subsystem
+[    0.151979] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.159083] thermal_sys: Registered thermal governor 'step_wise'
+[    0.174702] clocksource: Switched to clocksource MIPS
+[    0.188450] NET: Registered PF_INET protocol family
+[    0.193924] IP idents hash table entries: 2048 (order: 2, 16384 bytes, linear)
+[    0.202958] tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 4096 bytes, linear)
+[    0.211978] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.220256] TCP established hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[    0.228439] TCP bind hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[    0.235976] TCP: Hash tables configured (established 1024 bind 1024)
+[    0.242945] UDP hash table entries: 256 (order: 0, 4096 bytes, linear)
+[    0.250004] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes, linear)
+[    0.257964] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.264095] PCI: CLS 0 bytes, default 32
+[    0.272950] workingset: timestamp_bits=14 max_order=14 bucket_order=0
+[    0.286790] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.293025] jffs2: version 2.2 (NAND) (SUMMARY) (LZMA) (RTIME) (CMODE_PRIORITY) (c) 2001-2006 Red Hat, Inc.
+[    0.305470] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 251)
+[    0.318600] pinctrl-single 1804002c.pinmux: 544 pins, size 68
+[    0.326318] Serial: 8250/16550 driver, 16 ports, IRQ sharing enabled
+[    0.336647] printk: console [ttyS0] disabled
+[    0.341305] 18020000.uart: ttyS0 at MMIO 0x18020000 (irq = 9, base_baud = 2500000) is a 16550A
+[    0.350579] printk: console [ttyS0] enabled
+[    0.359499] printk: bootconsole [early0] disabled
+[    0.394106] spi-nor spi0.0: mx25l12805d (16384 Kbytes)
+[    0.399508] 5 fixed-partitions partitions found on MTD device spi0.0
+[    0.406040] OF: Bad cell count for /ahb/spi@1f000000/flash@0/partitions
+[    0.412810] OF: Bad cell count for /ahb/spi@1f000000/flash@0/partitions
+[    0.419959] OF: Bad cell count for /ahb/spi@1f000000/flash@0/partitions
+[    0.426775] OF: Bad cell count for /ahb/spi@1f000000/flash@0/partitions
+[    0.434015] Creating 5 MTD partitions on "spi0.0":
+[    0.438965] 0x000000000000-0x000000040000 : "u-boot"
+[    0.450998] 0x000000040000-0x000000050000 : "u-boot-env"
+[    0.457867] 0x000000050000-0x000000fb0000 : "firmware"
+[    0.466975] 2 uimage-fw partitions found on MTD device firmware
+[    0.473018] Creating 2 MTD partitions on "firmware":
+[    0.478138] 0x000000000000-0x000000240000 : "kernel"
+[    0.485712] 0x000000240000-0x000000f60000 : "rootfs"
+[    0.492112] mtd: setting mtd4 (rootfs) as root device
+[    0.498588] 1 squashfs-split partitions found on MTD device rootfs
+[    0.504970] 0x0000006a0000-0x000000f60000 : "rootfs_data"
+[    0.511945] 0x000000fb0000-0x000000ff0000 : "cfg"
+[    0.520393] 0x000000ff0000-0x000001000000 : "art"
+[    1.015365] ag71xx 19000000.eth: connected to PHY at mdio.0:04 [uid=004dd072, driver=Qualcomm Atheros AR8035]
+[    1.026375] eth0: Atheros AG71xx at 0xb9000000, irq 4, mode: rgmii-id
+[    1.033634] i2c_dev: i2c /dev entries driver
+[    1.040418] NET: Registered PF_INET6 protocol family
+[    1.056102] Segment Routing with IPv6
+[    1.059938] In-situ OAM (IOAM) with IPv6
+[    1.064069] NET: Registered PF_PACKET protocol family
+[    1.069389] bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+[    1.082972] 8021q: 802.1Q VLAN Support v1.8
+[    1.089212] PCI host bridge to bus 0000:00
+[    1.093403] pci_bus 0000:00: root bus resource [mem 0x10000000-0x13ffffff]
+[    1.100458] pci_bus 0000:00: root bus resource [io  0x0000]
+[    1.106137] pci_bus 0000:00: No busn resource found for root bus, will use [bus 00-ff]
+[    1.114289] pci 0000:00:00.0: [0777:11ac] type 00 class 0x028000
+[    1.120470] pci 0000:00:00.0: reg 0x10: [mem 0x00000000-0x001fffff 64bit]
+[    1.127435] pci 0000:00:00.0: reg 0x30: [mem 0x00000000-0x0000ffff pref]
+[    1.134328] pci 0000:00:00.0: supports D1 D2
+[    1.139917] pci_bus 0000:00: busn_res: [bus 00-ff] end is updated to 00
+[    1.146737] pci 0000:00:00.0: BAR 0: assigned [mem 0x10000000-0x101fffff 64bit]
+[    1.154189] pci 0000:00:00.0: BAR 6: assigned [mem 0x10200000-0x1020ffff pref]
+[    1.173792] VFS: Mounted root (squashfs filesystem) readonly on device 31:4.
+[    1.189136] Freeing unused kernel image (initmem) memory: 1240K
+[    1.195204] This architecture does not have kernel memory protection.
+[    1.201756] Run /sbin/init as init process
+[    1.205926]   with arguments:
+[    1.205933]     /sbin/init
+[    1.205941]   with environment:
+[    1.205946]     HOME=/
+[    1.205953]     TERM=linux
+[    1.982634] init: Console is alive
+[    1.986906] init: - watchdog -
+[    3.345238] kmodloader: loading kernel modules from /etc/modules-boot.d/*
+[    3.358155] kmodloader: done loading kernel modules from /etc/modules-boot.d/*
+[    3.376233] init: - preinit -
+[    5.406030] random: jshn: uninitialized urandom read (4 bytes read)
+[    5.951677] random: jshn: uninitialized urandom read (4 bytes read)
+[    6.044072] random: jshn: uninitialized urandom read (4 bytes read)
+[    8.652393] mount_root: jffs2 not ready yet, using temporary tmpfs overlay
+[    8.665268] urandom-seed: Seed file not found (/etc/urandom.seed)
+[    8.826617] procd: - early -
+[    8.829995] procd: - watchdog -
+[    9.645205] procd: - watchdog -
+[    9.851897] procd: - ubus -
+[   10.011993] random: ubusd: uninitialized urandom read (4 bytes read)
+[   10.063668] random: ubusd: uninitialized urandom read (4 bytes read)
+[   10.078647] random: ubusd: uninitialized urandom read (4 bytes read)
+[   10.092959] procd: - init -
+[   11.020644] random: ubusd: uninitialized urandom read (4 bytes read)
+[   11.027625] random: ubus: uninitialized urandom read (4 bytes read)
+[   11.620923] random: jshn: uninitialized urandom read (4 bytes read)
+[   11.638802] kmodloader: loading kernel modules from /etc/modules.d/*
+[   12.608488] Loading modules backported from Linux version v6.1.24-0-g0102425ac76b
+[   12.616189] Backport generated by backports.git v5.15.92-1-44-gd6ea70fafd36
+[   13.340963] ath10k 5.15 driver, optimized for CT firmware, probing pci device: 0x11ac.
+[   13.366342] ath10k_pci 0000:00:00.0: enabling device (0000 -> 0002)
+[   13.372913] ath10k_pci 0000:00:00.0: pci irq legacy oper_irq_mode 1 irq_mode 0 reset_mode 0
+[   14.965270] urngd: v1.0.2 started.
+[   17.505077] random: crng init done
+[   17.508563] random: 24 urandom warning(s) missed due to ratelimiting
+[   21.072350] ath10k_pci 0000:00:00.0: qca988x hw2.0 ubiquiti target 0x4100016c chip_id 0x043222ff sub 0777:e7f9
+[   21.082616] ath10k_pci 0000:00:00.0: kconfig debug 0 debugfs 1 tracing 0 dfs 1 testmode 0
+[   21.095998] ath10k_pci 0000:00:00.0: firmware ver 10.1-ct-8x-__fW-022-ecad3248 api 2 features wmi-10.x,has-wmi-mgmt-tx,mfp,txstatus-noack,wmi-10.x-CT,ratemask-CT,txrate-CT,get-temp-CT,tx-rc-CT,cust-stats-CT,retry-gt2-CT,txrate2-CT,beacon-cb-CT,wmi-block-ack-CT crc32 3e4cf97f
+[   21.216657] ath10k_pci 0000:00:00.0: Loading BDF type 0
+[   22.335354] ath10k_pci 0000:00:00.0: board_file api 1 bmi_id N/A crc32 bebc7c08
+[   23.400002] ath10k_pci 0000:00:00.0: 10.1 wmi init: vdevs: 16  peers: 127  tid: 256
+[   23.417911] ath10k_pci 0000:00:00.0: wmi print 'P 128 V 8 T 410'
+[   23.424084] ath10k_pci 0000:00:00.0: wmi print 'msdu-desc: 1424  sw-crypt: 0 ct-sta: 0'
+[   23.432243] ath10k_pci 0000:00:00.0: wmi print 'alloc rem: 24984 iram: 38672'
+[   23.481594] ath10k_pci 0000:00:00.0: htt-ver 2.1 wmi-op 2 htt-op 2 cal file max-sta 128 raw 0 hwcrypto 1
+[   23.504422] ath10k_pci 0000:00:00.0: NOTE:  Firmware DBGLOG output disabled in debug_mask: 0x10000000
+[   23.637071] ath: EEPROM regdomain: 0x0
+[   23.637099] ath: EEPROM indicates default country code should be used
+[   23.637107] ath: doing EEPROM country->regdmn map search
+[   23.637126] ath: country maps to regdmn code: 0x3a
+[   23.637136] ath: Country alpha2 being used: US
+[   23.637145] ath: Regpair used: 0x3a
+[   23.726554] ath: EEPROM regdomain: 0x0
+[   23.726585] ath: EEPROM indicates default country code should be used
+[   23.726593] ath: doing EEPROM country->regdmn map search
+[   23.726613] ath: country maps to regdmn code: 0x3a
+[   23.726623] ath: Country alpha2 being used: US
+[   23.726632] ath: Regpair used: 0x3a
+[   23.741541] ieee80211 phy1: Selected rate control algorithm 'minstrel_ht'
+[   23.744342] ieee80211 phy1: Atheros AR9340 Rev:2 mem=0xb8100000, irq=12
+[   23.785270] kmodloader: done loading kernel modules from /etc/modules.d/*
+[  121.845659] br-lan: port 1(eth0) entered blocking state
+[  121.851001] br-lan: port 1(eth0) entered disabled state
+[  121.856760] device eth0 entered promiscuous mode
+[  124.124777] jffs2_scan_eraseblock(): End of filesystem marker found at 0x0
+[  124.131857] jffs2_build_filesystem(): unlocking the mtd device... 
+[  124.133737] done.
+[  124.142044] jffs2_build_filesystem(): erasing all blocks after the end marker... 
+[  124.167208] jffs2: Newly-erased block contained word 0x19852003 at offset 0x008b0000
+[  124.222917] jffs2: Newly-erased block contained word 0x19852003 at offset 0x008a0000
+[  124.268860] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00890000
+[  124.301093] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00880000
+[  124.339616] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00870000
+[  124.376770] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00860000
+[  124.407222] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00850000
+[  124.438695] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00840000
+[  124.472056] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00830000
+[  124.487572] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00820000
+[  124.511595] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00810000
+[  124.533793] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00800000
+[  124.557051] jffs2: Newly-erased block contained word 0x19852003 at offset 0x007f0000
+[  124.579458] jffs2: Newly-erased block contained word 0x19852003 at offset 0x007e0000
+[  124.601633] jffs2: Newly-erased block contained word 0x19852003 at offset 0x007d0000
+[  124.623780] jffs2: Newly-erased block contained word 0x19852003 at offset 0x007c0000
+[  124.649086] jffs2: Newly-erased block contained word 0x19852003 at offset 0x007b0000
+[  124.669702] jffs2: Newly-erased block contained word 0x19852003 at offset 0x007a0000
+[  124.692913] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00790000
+[  124.714367] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00780000
+[  124.735844] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00770000
+[  124.767299] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00760000
+[  124.784089] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00750000
+[  124.807277] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00740000
+[  124.823648] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00730000
+[  124.849208] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00720000
+[  124.869286] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00710000
+[  124.894836] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00700000
+[  124.920858] jffs2: Newly-erased block contained word 0x19852003 at offset 0x006f0000
+[  124.947307] jffs2: Newly-erased block contained word 0x19852003 at offset 0x006e0000
+[  124.967936] jffs2: Newly-erased block contained word 0x19852003 at offset 0x006d0000
+[  124.986643] eth0: link up (1000Mbps/Full duplex)
+[  124.991394] br-lan: port 1(eth0) entered blocking state
+[  124.996770] br-lan: port 1(eth0) entered forwarding state
+[  125.016186] jffs2: Newly-erased block contained word 0x19852003 at offset 0x006c0000
+[  125.044761] jffs2: Newly-erased block contained word 0x19852003 at offset 0x006b0000
+[  125.052758] IPv6: ADDRCONF(NETDEV_CHANGE): br-lan: link becomes ready
+[  125.087276] jffs2: Newly-erased block contained word 0x19852003 at offset 0x006a0000
+[  125.105149] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00690000
+[  125.127223] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00680000
+[  125.147377] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00670000
+[  125.174788] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00660000
+[  125.190920] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00650000
+[  125.214825] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00640000
+[  125.243664] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00630000
+[  125.257178] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00620000
+[  125.277627] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00610000
+[  125.299951] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00600000
+[  125.379264] jffs2: Newly-erased block contained word 0x19852003 at offset 0x005f0000
+[  125.389616] jffs2: Newly-erased block contained word 0x19852003 at offset 0x005e0000
+[  125.400419] jffs2: Newly-erased block contained word 0x19852003 at offset 0x005d0000
+[  125.414835] jffs2: Newly-erased block contained word 0x19852003 at offset 0x005c0000
+[  125.437222] jffs2: Newly-erased block contained word 0x19852003 at offset 0x005b0000
+[  125.455261] jffs2: Newly-erased block contained word 0x19852003 at offset 0x005a0000
+[  125.483255] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00590000
+[  125.501277] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00580000
+[  125.525203] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00570000
+[  125.546232] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00560000
+[  125.556966] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00550000
+[  125.567309] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00540000
+[  125.578058] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00530000
+[  125.588736] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00520000
+[  125.599448] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00510000
+[  125.610137] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00500000
+[  125.620808] jffs2: Newly-erased block contained word 0x19852003 at offset 0x004f0000
+[  125.631480] jffs2: Newly-erased block contained word 0x19852003 at offset 0x004e0000
+[  125.642167] jffs2: Newly-erased block contained word 0x19852003 at offset 0x004d0000
+[  125.652840] jffs2: Newly-erased block contained word 0x19852003 at offset 0x004c0000
+[  125.663514] jffs2: Newly-erased block contained word 0x19852003 at offset 0x004b0000
+[  125.674194] jffs2: Newly-erased block contained word 0x19852003 at offset 0x004a0000
+[  125.684919] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00490000
+[  125.695615] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00480000
+[  125.706309] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00470000
+[  125.716985] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00460000
+[  125.727322] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00450000
+[  125.738073] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00440000
+[  125.748771] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00430000
+[  125.759453] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00420000
+[  125.770134] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00410000
+[  125.780820] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00400000
+[  125.791503] jffs2: Newly-erased block contained word 0x19852003 at offset 0x003f0000
+[  125.802187] jffs2: Newly-erased block contained word 0x19852003 at offset 0x003e0000
+[  125.812871] jffs2: Newly-erased block contained word 0x19852003 at offset 0x003d0000
+[  125.823552] jffs2: Newly-erased block contained word 0x19852003 at offset 0x003c0000
+[  125.834240] jffs2: Newly-erased block contained word 0x19852003 at offset 0x003b0000
+[  125.844970] jffs2: Newly-erased block contained word 0x19852003 at offset 0x003a0000
+[  125.855645] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00390000
+[  125.866334] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00380000
+[  125.877061] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00370000
+[  125.887404] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00360000
+[  125.898168] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00350000
+[  125.908861] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00340000
+[  125.919552] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00330000
+[  125.930243] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00320000
+[  125.940937] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00310000
+[  125.951962] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00300000
+[  125.962715] jffs2: Newly-erased block contained word 0x19852003 at offset 0x002f0000
+[  125.973429] jffs2: Newly-erased block contained word 0x19852003 at offset 0x002e0000
+[  125.984122] jffs2: Newly-erased block contained word 0x19852003 at offset 0x002d0000
+[  125.994867] jffs2: Newly-erased block contained word 0x19852003 at offset 0x002c0000
+[  126.005635] jffs2: Newly-erased block contained word 0x19852003 at offset 0x002b0000
+[  126.016361] jffs2: Newly-erased block contained word 0x19852003 at offset 0x002a0000
+[  126.027235] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00290000
+[  126.037593] jffs2: Newly-erased block contained word 0x19852003 at offset 0x00280000
+[  126.049055] jffs2: Newly-erased block contained word 0x0 at offset 0x00270000
+[  126.059288] jffs2: Newly-erased block contained word 0xdeadc0de at offset 0x00260000
+[  126.108846] jffs2: Newly-erased block contained word 0xdeadc0de at offset 0x00240000
+[  126.119183] jffs2: Newly-erased block contained word 0xdeadc0de at offset 0x00230000
+[  126.130025] jffs2: Newly-erased block contained word 0x7c8edd57 at offset 0x00220000
+[  126.140822] jffs2: Newly-erased block contained word 0xd2ebbb2e at offset 0x00210000
+[  126.151536] jffs2: Newly-erased block contained word 0x587cef76 at offset 0x00200000
+[  126.162248] jffs2: Newly-erased block contained word 0xd92cf1b0 at offset 0x001f0000
+[  126.172959] jffs2: Newly-erased block contained word 0xa236052a at offset 0x001e0000
+[  126.183670] jffs2: Newly-erased block contained word 0xbed1e2d5 at offset 0x001d0000
+[  126.194399] jffs2: Newly-erased block contained word 0xdb0cc449 at offset 0x001c0000
+[  126.205168] jffs2: Newly-erased block contained word 0x5f17281c at offset 0x001b0000
+[  126.215863] jffs2: Newly-erased block contained word 0x7effe564 at offset 0x001a0000
+[  126.226575] jffs2: Newly-erased block contained word 0x7ca2a700 at offset 0x00190000
+[  126.237291] jffs2: Newly-erased block contained word 0x5bf1f845 at offset 0x00180000
+[  126.247627] jffs2: Newly-erased block contained word 0x88c5848f at offset 0x00170000
+[  126.258421] jffs2: Newly-erased block contained word 0xddde5c93 at offset 0x00160000
+[  126.269144] jffs2: Newly-erased block contained word 0x5c467031 at offset 0x00150000
+[  126.279865] jffs2: Newly-erased block contained word 0xbc0597c8 at offset 0x00140000
+[  126.290578] jffs2: Newly-erased block contained word 0x3353301f at offset 0x00130000
+[  126.301319] jffs2: Newly-erased block contained word 0x9ed46da4 at offset 0x00120000
+[  126.312037] jffs2: Newly-erased block contained word 0x84602dc8 at offset 0x00110000
+[  126.322757] jffs2: Newly-erased block contained word 0x1c3ff33a at offset 0x00100000
+[  126.333485] jffs2: Newly-erased block contained word 0xd4f16c21 at offset 0x000f0000
+[  126.344209] jffs2: Newly-erased block contained word 0xcf6837a6 at offset 0x000e0000
+[  126.354980] jffs2: Newly-erased block contained word 0x7c3a0c76 at offset 0x000d0000
+[  126.365681] jffs2: Newly-erased block contained word 0xf1580054 at offset 0x000c0000
+[  126.376408] jffs2: Newly-erased block contained word 0x22c5036a at offset 0x000b0000
+[  126.387134] jffs2: Newly-erased block contained word 0xcc9dd9c9 at offset 0x000a0000
+[  126.397474] jffs2: Newly-erased block contained word 0x314a3436 at offset 0x00090000
+[  126.408298] jffs2: Newly-erased block contained word 0x56762a52 at offset 0x00080000
+[  126.419033] jffs2: Newly-erased block contained word 0x219bb56e at offset 0x00070000
+[  126.429763] jffs2: Newly-erased block contained word 0xd01bcac6 at offset 0x00060000
+[  126.440490] jffs2: Newly-erased block contained word 0x29e376a1 at offset 0x00050000
+[  126.451217] jffs2: Newly-erased block contained word 0xaa01482b at offset 0x00040000
+[  126.462000] jffs2: Newly-erased block contained word 0xb61da715 at offset 0x00030000
+[  126.472755] jffs2: Newly-erased block contained word 0x489b0f5c at offset 0x00020000
+[  126.483497] jffs2: Newly-erased block contained word 0x86fa3b2d at offset 0x00010000
+[  126.494240] jffs2: Newly-erased block contained word 0xdeadc0de at offset 0x00000000
+[  126.502556] done.
+[  126.504535] jffs2: notice: (2591) jffs2_build_xattr_subsystem: complete building xattr subsystem, 0 of xdatum (0 unchecked, 0 orphan) and 0 of xref (0 dead, 0 orphan) found.
+[  130.857288] ath: EEPROM regdomain: 0x8114
+[  130.857324] ath: EEPROM indicates we should expect a country code
+[  130.857334] ath: doing EEPROM country->regdmn map search
+[  130.857342] ath: country maps to regdmn code: 0x37
+[  130.857351] ath: Country alpha2 being used: DE
+[  130.857361] ath: Regpair used: 0x37
+[  130.857369] ath: regdomain 0x8114 dynamically updated by user
+[  130.857489] ath: EEPROM regdomain: 0x8114
+[  130.857499] ath: EEPROM indicates we should expect a country code
+[  130.857507] ath: doing EEPROM country->regdmn map search
+[  130.857514] ath: country maps to regdmn code: 0x37
+[  130.857523] ath: Country alpha2 being used: DE
+[  130.857531] ath: Regpair used: 0x37
+[  130.857538] ath: regdomain 0x8114 dynamically updated by user
+[  130.857555] ath10k_pci 0000:00:00.0: DFS region 0x0 not supported, will trigger radar for every pulse
+[  135.428465] br-lan: port 2(phy1-ap0) entered blocking state
+[  135.434162] br-lan: port 2(phy1-ap0) entered disabled state
+[  135.440276] device phy1-ap0 entered promiscuous mode
+[  135.592796] IPv6: ADDRCONF(NETDEV_CHANGE): phy1-ap0: link becomes ready
+[  135.599877] br-lan: port 2(phy1-ap0) entered blocking state
+[  135.605627] br-lan: port 2(phy1-ap0) entered forwarding state
+[  136.930048] ath10k_pci 0000:00:00.0: 10.1 wmi init: vdevs: 16  peers: 127  tid: 256
+[  136.948272] ath10k_pci 0000:00:00.0: wmi print 'P 128 V 8 T 410'
+[  136.954478] ath10k_pci 0000:00:00.0: wmi print 'msdu-desc: 1424  sw-crypt: 0 ct-sta: 0'
+[  136.962691] ath10k_pci 0000:00:00.0: wmi print 'alloc rem: 24984 iram: 38672'
+[  137.020717] ath10k_pci 0000:00:00.0: pdev param 0 not supported by firmware
+[  137.044535] ath10k_pci 0000:00:00.0: rts threshold -1
+[  137.054020] br-lan: port 3(phy0-ap0) entered blocking state
+[  137.059827] br-lan: port 3(phy0-ap0) entered disabled state
+[  137.065951] device phy0-ap0 entered promiscuous mode
+[  138.453167] IPv6: ADDRCONF(NETDEV_CHANGE): phy0-ap0: link becomes ready
+[  138.460250] br-lan: port 3(phy0-ap0) entered blocking state
+[  138.466003] br-lan: port 3(phy0-ap0) entered forwarding state
+[  174.517583] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon
+[  174.619982] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon
+[  174.722471] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon
+[  174.824839] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon
+[  174.927186] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon
+[  175.029598] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon
+[  175.132001] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon
+[  175.234406] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon
+[  175.336798] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon
+[  175.439200] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon
+[  175.541586] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon
+[  175.644001] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon
+[  175.746395] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon
+[  175.848796] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon
+[  175.951196] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon
+[  176.053742] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon
+[  176.156002] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon
+[  176.258403] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon
+[  176.360803] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon
+[  176.463202] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon
+[  176.565604] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon
+[  176.668012] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon
+[  176.770416] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon
+[  176.872819] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon
+[  176.975210] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon
+[  177.077623] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon
+[  177.180033] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon
+[  177.282416] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon
+[  177.385204] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon
+[  177.464803] ath10k_pci 0000:00:00.0: Cannot communicate with firmware, previous wmi cmds: 36977:-12557 36904:-12562 36952:-12568 40859:-12568, jiffies: -12256, attempting restart restart firmware, dev-flags: 0 x142
+[  177.484653] ath10k_pci 0000:00:00.0: failed to send pdev bss chan info request: -11
+[  177.492792] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon
+[  177.502069] ath10k_pci 0000:00:00.0: failed to send wmi nop: -143
+[  177.508496] ath10k_pci 0000:00:00.0: could not request stats (type -268435456 ret -143 specifier 1)
+[  177.534780] ath10k_pci 0000:00:00.0: removing peer, cleanup-all, deleting: peer 1c678088 vdev: 0 addr: fc:ec:da:08:21:d1 
+[  177.677674] ieee80211 phy0: Hardware restart was requested
+[  179.199645] ath10k_pci 0000:00:00.0: 10.1 wmi init: vdevs: 16  peers: 127  tid: 256
+[  179.217721] ath10k_pci 0000:00:00.0: wmi print 'P 128 V 8 T 410'
+[  179.223908] ath10k_pci 0000:00:00.0: wmi print 'msdu-desc: 1424  sw-crypt: 0 ct-sta: 0'
+[  179.232840] ath10k_pci 0000:00:00.0: wmi print 'alloc rem: 24984 iram: 38672'
+[  179.290888] ath10k_pci 0000:00:00.0: pdev param 0 not supported by firmware
+[  179.306398] ath10k_pci 0000:00:00.0: set-coverage-class, phyclk: 88  value: 0
+[  179.325552] ath10k_pci 0000:00:00.0: rts threshold -1
+[  179.339716] ath10k_pci 0000:00:00.0: device successfully recovered
+[  200.933579] br-lan: port 3(phy0-ap0) entered disabled state
+[  200.939479] br-lan: port 2(phy1-ap0) entered disabled state
+[  200.945253] br-lan: port 1(eth0) entered disabled state
+[  201.015932] device eth0 left promiscuous mode
+[  201.020756] br-lan: port 1(eth0) entered disabled state
+[  201.059079] eth0: link down
+[  201.078989] device phy0-ap0 left promiscuous mode
+[  201.084085] br-lan: port 3(phy0-ap0) entered disabled state
+[  201.129981] device phy1-ap0 left promiscuous mode
+[  201.135107] br-lan: port 2(phy1-ap0) entered disabled state
+[  201.985526] ath10k_pci 0000:00:00.0: mac flush null vif, drop 0 queues 0xffff
+[  208.925917] br-lan: port 1(eth0) entered blocking state
+[  208.931259] br-lan: port 1(eth0) entered disabled state
+[  208.937003] device eth0 entered promiscuous mode
+[  212.026252] eth0: link up (1000Mbps/Full duplex)
+[  212.031016] br-lan: port 1(eth0) entered blocking state
+[  212.036382] br-lan: port 1(eth0) entered forwarding state
+[  212.109943] IPv6: ADDRCONF(NETDEV_CHANGE): br-lan: link becomes ready
+# mount
+/dev/root on /rom type squashfs (ro,relatime,errors=continue)
+proc on /proc type proc (rw,nosuid,nodev,noexec,noatime)
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,noatime)
+cgroup2 on /sys/fs/cgroup type cgroup2 (rw,nosuid,nodev,noexec,relatime,nsdelegate)
+tmpfs on /tmp type tmpfs (rw,nosuid,nodev,noatime)
+tmpfs on /tmp/root type tmpfs (rw,noatime,mode=755)
+overlayfs:/tmp/root on / type overlay (rw,noatime,lowerdir=/,upperdir=/tmp/root/upper,workdir=/tmp/root/work)
+tmpfs on /dev type tmpfs (rw,nosuid,noexec,noatime,size=512k,mode=755)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,noatime,mode=600,ptmxmode=000)
+debugfs on /sys/kernel/debug type debugfs (rw,noatime)
+bpffs on /sys/fs/bpf type bpf (rw,nosuid,nodev,noexec,noatime,mode=700)
+/dev/mtdblock5 on /rom/overlay type jffs2 (rw,noatime)
+# df -h
+Filesystem                Size      Used Available Use% Mounted on
+/dev/root                 4.5M      4.5M         0 100% /rom
+tmpfs                    27.9M    728.0K     27.2M   3% /tmp
+tmpfs                    27.9M    132.0K     27.8M   0% /tmp/root
+overlayfs:/tmp/root      27.9M    132.0K     27.8M   0% /
+tmpfs                   512.0K         0    512.0K   0% /dev
+/dev/mtdblock5            8.8M      8.8M         0 100% /rom/overlay
